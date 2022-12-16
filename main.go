@@ -30,7 +30,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "Error: update issue:", err)
 	}
 
-	fmt.Printf("Create jira.Issue with minimal fields")
+	fmt.Printf("Create jira.Issue with minimal fields\n")
 	issue = createMinimalJiraIssue(cfg)
 
 	fmt.Printf("Update issue %q to minimal issue values.\n", cfg.IssueKey)
